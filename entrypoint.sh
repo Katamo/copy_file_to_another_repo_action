@@ -38,6 +38,7 @@ fi
 echo "Copying contents to git repo"
 mkdir -p $CLONE_DIR/$INPUT_DESTINATION_FOLDER
 cp ".env" "$DEST_COPY"
+cat "$DEST_COPY/.env"
 if [ -z "$INPUT_USE_RSYNC" ]
 then
   cp -R "$INPUT_SOURCE_FILE" "$DEST_COPY"
